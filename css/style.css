@@ -34,8 +34,12 @@ header{display: inline-block;
 	border-bottom: solid 1.5px #bbb;
 }
 
-.logoM{
-	transition: all 0.8s;
+.logoM{	
+	
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
 }
 
 .logoM :hover{
@@ -44,7 +48,6 @@ header{display: inline-block;
 }
 
 .logo {
-	margin: 0 auto;
 	width:50px;
     height: 50px;
 	background: url("../images/20190425a.png");
@@ -175,7 +178,7 @@ header{display: inline-block;
 .name{
 	position: absolute;
 	top: 3vh;
-	left: 66vw;
+	left: 65.5vw;
 }
 
 .name a{
