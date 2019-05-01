@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top{
+	
+ 	background-color:#fff;
+	color: #aaa;
+	display: inline-block;
+	width:100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.wrap{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 83%;
+}
+
+.title{
+	font-size: 5.5rem;
+	margin:13rem 3rem 3rem;
+}
+
+.subtitle{
+	font-size: 1.4rem;
+	letter-spacing: 1rem;
+}
+
+header{display: inline-block;
+	background-color: rgba(255,255,255,.5);
+	color: #bbb;
+	width:100%;
+	border-bottom: solid 1.5px #bbb;
+}
+
+.logoM{
+	transition: all 0.8s;
+}
+
+.logoM :hover{
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.logo {
+	margin: 0 auto;
+	width:50px;
+    height: 50px;
+	background: url("../images/20190425a.png");
+	 background-size: cover;
+}
+
+
+
+/* ハンバーガーメニュー　*/
+#nav-drawer {
+	left: 24vw;
+  position: absolute;
+	display: inline-block;
+	margin: 1rem 1rem 0rem;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #bbb;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+	display: block;
+	text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  padding: 1rem;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+#nav-content li{
+	margin-top: 3rem;
+	font-size: 1.2rem;
+}
+
+#nav-content a{
+	color: #bbb;
+	position: relative;
+  display: inline-block;
+	text-decoration: none;
+}
+
+#nav-content a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #0072bc;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+#nav-content a:hover{
+		background-color: #fff;
+		color: #0072bc;
+}
+
+#nav-content :hover::after{
+	  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+.name{
+	position: absolute;
+	top: 3vh;
+	left: 66vw;
+}
+
+.name a{
+	color: #bbb;
+	text-decoration: none;
+	transition: 1.0s ;
+}
+
+.name a:hover{
+	color: #0072bc;
+}
+
+footer{
+	padding: 5px 0 5px;
+	text-align: center;
+	height:9%;
+	background-color: rgba(255,255,255,.3);
+}
+
+footer  div{
+	text-align:center;
+    display: inline-block;
+	height: 2rem;
+    left: 50%;
+}
+
+.icon_t{
+	z-index: 9999;
+	background : url("../images/20190425a.png")
+}
+
+footer a {
+  color:#fff;
+  border:solid 2px #aaa;
+  border-radius:30px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+	margin: 0 15px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+footer small{
+	color: #999;
+	font-size: .7rem;
+}
+
+footer a:hover {
+  background: #0072bc;
+	border-color: #0072bc;
+  border-radius: 5px;
+}
+
+
+a span {
+  color:#fff;
+  position:absolute;
+  font-family:serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 5px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#0072bc;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+a:hover span {
+  bottom:2rem;
+  visibility:visible;
+  opacity:1;
+}
+
+
+
+/*about*/
+#about{
+	color: #aaa;
+}
+
+
+.wrapA{
+	height: 82vh;
+}
+
+.profileImage{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	left: 25vw;
+	top: 15vh;
+	background: url("../images/0004_1.jpg");
+	background-size: cover;
+	border: 1.5px solid #ccc;
+}
+
+.profileName{
+	position: absolute;
+	left:44vw;
+	top:25vh;
+	width: 30vw;
+	font-size: 1.2rem;
+	border-bottom: 1px solid;
+	padding: 5px 0px;
+	letter-spacing: .2rem;
+}
+
+.profilePosition{
+	position: absolute;
+	width: 34vw;
+	left: 44vw;
+	top: 32vh;	
+	letter-spacing: .2rem;
+	line-height: 1.7rem;
+}
+
+.profileText{
+	border-top: 1px solid;
+	padding: .7rem 0px ;
+	width: 49vw;
+	position: absolute;
+	left: 25vw;
+	top: 55vh;
+	line-height: 1.5rem;
+}
+
+
+/*portfolio*/
+
+#topP{
+	
+ 	background-color:#fff;
+	color: #aaa;
+	display: inline-block;
+	width:100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+
+.wrapP{
+	background-color: rgba(255,255,255,0);
+	height: 220vh;
+	width: 70vw;
+	margin:20vh 15vw 10px;
+}
+
+.wrapP img{
+	width: 22vw;
+	height: 22vw;
+	object-fit: cover;
+
+}
+
+.wrapP div{
+	float: left;
+	margin-bottom: 2vw;
+}
+
+.imageC{
+	margin: 0 2vw;
+}
+
+.illust1{
+		object-position: 20% 50%;
+}
+.illust2{
+		object-position: 50% 50%;
+}
+.illust3{
+	object-position: 50% 50%;
+}
+.illust4{
+	object-position: 50% 100%;
+}
+.illust5{
+	object-position: 50% 50%;
+}
+.illust5{
+	object-position: 50% 50%;
+}
+.illust6{
+	object-position: 50% 0%;
+}
+.illust7{
+	object-position: 0% 50%;
+}
+.illust8{
+	object-position: 50% 50%;
+}
+.illust9{
+	object-position: 50% 100%;
+}
+.illust10{
+	object-position: 0% 80%;
+}
+.illust11{
+	object-position: 50% 0%;
+}
