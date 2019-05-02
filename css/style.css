@@ -27,8 +27,10 @@
 	letter-spacing: 1rem;
 }
 
-header{display: inline-block;
-	background-color: rgba(255,255,255,.5);
+header{	
+	position: fixed;
+	display: inline-block;
+	background-color: rgba(255,255,255,.3);
 	color: #bbb;
 	width:100%;
 	border-bottom: solid 1.5px #bbb;
@@ -296,8 +298,8 @@ a:hover span {
 
 .profileImage{
 	position: relative;
-	width: 120px;
-	height: 120px;
+	width: 20vh;
+	height: 20vh;
 	left: 25vw;
 	top: 15vh;
 	background: url("../images/0004_1.jpg");
@@ -407,4 +409,12 @@ a:hover span {
 }
 .illust11{
 	object-position: 50% 0%;
+}
+
+/*contact*/
+
+
+.wrapC{
+	background-color: rgba(255,255,255,0);
+	height: 220vh;
 }
