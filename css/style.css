@@ -416,14 +416,14 @@ a:hover span {
 
 .wrapC{
 	background-color: rgba(255,255,255,0);
-	height: 250vh;
+	height: 230vh;
 }
 
 
 .iframe{
 	position: relative;
 	width: 100%;
-	padding: 50vh 0 0 0;
+	padding: 30vh 0 0 0;
 }
 
 .iframe iframe{
