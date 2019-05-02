@@ -28,6 +28,7 @@
 }
 
 header{	
+	z-index: 9999;
 	position: fixed;
 	display: inline-block;
 	background-color: rgba(255,255,255,.3);
@@ -194,7 +195,6 @@ header{
 }
 
 footer{
-	z-index: 1000;
 	padding: 5px 0 5px;
 	text-align: center;
 	height:9%;
@@ -202,7 +202,6 @@ footer{
 }
 
 footer  div{
-	z-index: 9999;
 	text-align:center;
     display: inline-block;
 	height: 2rem;
@@ -239,7 +238,6 @@ footer small{
 }
 
 footer a:hover {
-	z-index: 9999;
   background: #0072bc;
 	border-color: #0072bc;
   border-radius: 5px;
@@ -424,7 +422,6 @@ a:hover span {
 
 
 .iframe{
-	z-index: 9;
 	position: relative;
 	width: 100%;
 	padding: 10vh 0 0 0;
