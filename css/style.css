@@ -214,6 +214,7 @@ footer  div{
 }
 
 footer a {
+	z-index: 9999;
   color:#fff;
   border:solid 2px #aaa;
   border-radius:30px;
