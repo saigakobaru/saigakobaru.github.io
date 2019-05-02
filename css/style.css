@@ -293,7 +293,7 @@ a:hover span {
 
 
 .wrapA{
-	height: 82vh;
+	height: 91vh;
 }
 
 .profileImage{
@@ -301,7 +301,7 @@ a:hover span {
 	width: 20vh;
 	height: 20vh;
 	left: 25vw;
-	top: 15vh;
+	top: 24vh;
 	background: url("../images/0004_1.jpg");
 	background-size: cover;
 	border: 1.5px solid #ccc;
@@ -310,7 +310,7 @@ a:hover span {
 .profileName{
 	position: absolute;
 	left:44vw;
-	top:25vh;
+	top:27vh;
 	width: 30vw;
 	font-size: 1.2rem;
 	border-bottom: 1px solid;
@@ -322,7 +322,7 @@ a:hover span {
 	position: absolute;
 	width: 34vw;
 	left: 44vw;
-	top: 32vh;	
+	top: 34vh;	
 	letter-spacing: .2rem;
 	line-height: 1.7rem;
 }
@@ -333,7 +333,7 @@ a:hover span {
 	width: 49vw;
 	position: absolute;
 	left: 25vw;
-	top: 55vh;
+	top: 57vh;
 	line-height: 1.5rem;
 }
 
