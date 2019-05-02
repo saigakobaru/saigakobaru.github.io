@@ -422,6 +422,7 @@ a:hover span {
 
 
 .iframe{
+	z-index: 9;
 	position: relative;
 	width: 100%;
 	padding: 20vh 0 0 0;
@@ -430,7 +431,7 @@ a:hover span {
 .iframe iframe{
 	position: absolute;
 	top: 20vh;
-	left: 0;
-	width: 100vw;
+	left: 5vw;
+	width: 90vw;
 	height: 200vh;
 }
