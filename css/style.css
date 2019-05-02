@@ -202,6 +202,7 @@ footer{
 }
 
 footer  div{
+	z-index: 9999;
 	text-align:center;
     display: inline-block;
 	height: 2rem;
@@ -238,6 +239,7 @@ footer small{
 }
 
 footer a:hover {
+	z-index: 9999;
   background: #0072bc;
 	border-color: #0072bc;
   border-radius: 5px;
