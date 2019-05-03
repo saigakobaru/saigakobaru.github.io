@@ -10,20 +10,75 @@
 	height: 100vh;
 }
 .wrap{
+	position: relative;
 	text-align: center;
-	display: inline-block;
+	width: 100%;
+}
+
+.top{
+	text-align: center;
 	width: 100%;
 	height: 91vh;
 }
 
 .title{
-	font-size: 5.5rem;
-	margin:42vh 3rem 3rem;
+	width: 50%;
+	font-size: 1.2rem;
+	letter-spacing: 1rem;
+	margin:0 25.5vw 4rem;
+	padding-top: 45vh;
 }
 
 .subtitle{
-	font-size: 1.4rem;
-	letter-spacing: 1rem;
+	width: 50%;
+	font-size: .9rem;
+	letter-spacing: .8rem;
+	margin: 0 25.5vw;
+}
+
+
+.sectionP{
+	height: 120vw;
+}
+
+.sectionTitle{
+	font-size: .8rem;
+	letter-spacing: .3rem;
+	padding: 3rem;
+	text-align: center;
+}
+
+.sectionP .wrapP{
+	height: 130vw;
+	margin-top: 5vh;
+	
+}
+
+.sectionA{
+	height: 90vh;
+	position: relative;
+	text-align: left;
+}
+
+
+.sectionA .wrapA{
+	height: 80vh;
+}
+
+.sectionA .profileImage{
+	top: 15vh;
+}
+
+.sectionA .profileName{
+	top: 18vh;
+}
+
+.sectionA .profilePosition{
+	top:25vh;
+}
+
+.sectionA .profileText{
+	top: 48vh;
 }
 
 header{	
@@ -192,14 +247,21 @@ header{
 }
 
 footer{
-	padding: 5px 0 5px;
+	width: 100%;
 	text-align: center;
+	bottom: 0;
 	height:9%;
 	background-color: rgba(255,255,255,.3);
 }
 
+
+#top footer{
+	position: fixed;
+}
+
+
 footer  div{
-	text-align:center;
+	padding-top: 5px;
     display: inline-block;
 	height: 2rem;
     left: 50%;
@@ -354,7 +416,7 @@ a:hover span {
 
 .wrapP{
 	background-color: rgba(255,255,255,0);
-	height: 220vh;
+	height: 100vw;
 	width: 70vw;
 	margin:20vh 15vw 10px;
 }
@@ -441,9 +503,4 @@ a:hover span {
 	left: 5vw;
 	width: 90vw;
 	height: 200vh;
-}
-
-.sectionP{
-	
-	height: 100vh;
 }
