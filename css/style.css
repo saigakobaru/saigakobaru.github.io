@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase:500|Noto+Serif+JP:300|PT+Sans');
 /* CSS Document */
 
 #top{
@@ -22,16 +23,18 @@
 }
 
 .title{
+	font-family: 'PT Sans', sans-serif;
 	width: 50%;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	letter-spacing: 1rem;
 	margin:0 25.5vw 4rem;
 	padding-top: 45vh;
 }
 
 .subtitle{
+	font-family: 'PT Sans', sans-serif;
 	width: 50%;
-	font-size: .9rem;
+	font-size: 1rem;
 	letter-spacing: .8rem;
 	margin: 0 25.5vw;
 }
@@ -42,7 +45,8 @@
 }
 
 .sectionTitle{
-	font-size: .8rem;
+	font-family: 'Cormorant Unicase', serif;
+	font-size: 1.2rem;
 	letter-spacing: .3rem;
 	padding: 3rem;
 	text-align: center;
@@ -66,19 +70,19 @@
 }
 
 .sectionA .profileImage{
-	top: 15vh;
+	top: 17vh;
 }
 
 .sectionA .profileName{
-	top: 18vh;
+	top: 20vh;
 }
 
 .sectionA .profilePosition{
-	top:25vh;
+	top: 27vh;
 }
 
 .sectionA .profileText{
-	top: 48vh;
+	top: 50vh;
 }
 
 header{	
@@ -166,6 +170,8 @@ header{
 
 /*中身*/
 #nav-content {
+	font-family: 'Cormorant Unicase', serif;
+	letter-spacing: .5rem;
   overflow: auto;
   position: fixed;
 	display: block;
@@ -231,6 +237,8 @@ header{
 }
 
 .name{
+	
+	font-family: 'Cormorant Unicase', serif;
 	position: absolute;
 	top: 3vh;
 	left: 65.5vw;
@@ -373,6 +381,7 @@ a:hover span {
 }
 
 .profileName{
+	font-family: 'Noto Serif JP', serif;
 	position: absolute;
 	left:44vw;
 	top:27vh;
@@ -384,15 +393,17 @@ a:hover span {
 }
 
 .profilePosition{
+	font-family: 'Cormorant Unicase', serif;
 	position: absolute;
 	width: 34vw;
 	left: 44vw;
 	top: 34vh;	
-	letter-spacing: .2rem;
+	letter-spacing: .25rem;
 	line-height: 1.7rem;
 }
 
 .profileText{
+	font-family: 'Noto Serif JP', serif;
 	border-top: 1px solid;
 	padding: .7rem 0px ;
 	width: 49vw;
